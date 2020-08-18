@@ -31,6 +31,9 @@ body {
   font-family: 'Varela Round', sans-serif;
   font-size: 14px;
   color: var(--font-color);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -44,7 +47,7 @@ body {
   min-height: 380px;
   width: 100%;
   text-align: center;
-  background: url('/images/hero-image_3.jpg');
+  background: url('/images/hero-large.jpg');
   background-position: center;
   background-color: var(--bg-color);
   object-fit: cover;
@@ -91,7 +94,7 @@ body {
   justify-content: space-between;
   height: 100%;
   margin: 0 10%;
-  padding: 0em;
+  padding: 0;
   align-items: center;
 }
 
@@ -222,14 +225,14 @@ body {
 }
 
 #topnav.opened .nav-links {
-  padding: 1em 0em;
+  padding: 1em 0;
   transform: translateX(0px);
   transition: transform 250ms ease-in-out;
   max-height: none;
 }
 
 #topnav.opened .nav-link {
-  margin: 0.0em;
+  margin: 0;
 }
 
 /*
@@ -239,6 +242,7 @@ body {
 main {
   width: 100%;
   margin: 0 auto;
+  flex: 1;
 }
 
 .title-container {
@@ -450,8 +454,8 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 1em 1em;
-  color: var(--font-color);
-  background-color: var(--card-header-bg-color);
+  color: var(--font-color-invers);
+  background-color: var(--table-color);
 }
 
 .review-name {

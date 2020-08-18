@@ -5,8 +5,8 @@ const restaurantItemTemplate = (restaurant) => `
   <div class="card">
     <a href="#/detail/${restaurant.id}">
       <div class="img-container">
-        <img class="img-res" alt="image ${restaurant.name}" src="${
-    CONFIG.BASE_IMAGE_URL + restaurant.pictureId
+        <img class="img-res lazyload" alt="${restaurant.name}" src="${
+    CONFIG.BASE_IMAGE_URL_SM + restaurant.pictureId
   }" crossorigin="anonymous"/>
         <span class="card-title"><p>${restaurant.city}</p></span>
       </div>
@@ -23,8 +23,8 @@ const restaurantDetailTemplate = (detail) => `
   <div class="detail">
     <div>
       <div>
-        <img class="img-res2" alt="image ${detail.name}" src="${
-  CONFIG.BASE_IMAGE_URL + detail.pictureId
+        <img class="img-res2 lazyload" alt="${detail.name}" src="${
+  CONFIG.BASE_IMAGE_URL_SM + detail.pictureId
 }" crossorigin="anonymous"/>
       </div>
     </div>

@@ -33,12 +33,15 @@
   }
 
   .hero {
-    min-height: 500px;
+    min-height: 350px;
+    background: url('/images/hero-small.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   .hero__inner {
     padding-top: 1em;
-    padding-bottom: 0em;
+    padding-bottom: 0;
   }
 
   .container {
@@ -95,7 +98,7 @@
   }
 
   #topnav .nav-link a {
-      padding: 0em 1.5em;
+      padding: 0 1.5em;
   }
 
   #topnav .nav-link:last-child {
@@ -151,6 +154,12 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.245em;
   }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.245em;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -159,11 +168,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .hero {
+    background: url('/images/hero-xl.jpg');
+    background-position: center;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1280px and up) */
 @media only screen and (min-width: 1280px) {
-
+  main {
+    max-width: 1200px;
+  }
   #list-rest {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

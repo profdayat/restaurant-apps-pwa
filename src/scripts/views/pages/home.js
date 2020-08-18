@@ -9,7 +9,8 @@ const Home = {
       <div id="loading"></div>
       <div class="main">
         <h2 class="title-container">Explore Restaurant</h2>
-        <section id="list-rest"></section>
+        <section id="list-rest">
+        </section>
       </div>
     </div>
     `;
@@ -21,6 +22,7 @@ const Home = {
     loading.innerHTML = Spinner();
     main.style.display = 'none';
     const listContainer = document.querySelector('#list-rest');
+    listContainer.innerHTML = '';
 
     try {
       const data = await RestaurantSource.listRestaurant();
