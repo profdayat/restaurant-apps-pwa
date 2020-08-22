@@ -282,7 +282,7 @@ main {
   color: var(--font-color-invers);
   font-size: medium;
   padding: 10px;
-  background-color: var(--card-header-bg-color);
+  background-color: var(--primary-color);
   width: 40%;
   min-width: min-content;
   z-index: 1;
@@ -295,8 +295,10 @@ main {
 
 .img-res {
   object-fit: cover;
+  background: grey;
   width: 100%;
   height: 200px;
+  min-height: 200px;
 }
 
 .img-res2 {
